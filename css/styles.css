@@ -5,3 +5,77 @@
 body {
     font-family: 'Lato', sans-serif;
 }
+
+.bg-explore {
+    background-color: #eafaff;
+}
+
+.carousel-caption {
+    bottom: 0;
+}
+
+
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    background: rgb(0 0 0 / 30%);
+    width: 100%;
+    opacity: 1.5;
+    border-radius: 5px;
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media only screen and (max-width: 576px) {
+    .carousel-item h1 {
+        font-size: 4.5vw;
+    }
+
+    .carousel-item p {
+        font-size: 3.5vw;
+    }
+
+    .max-lines {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 4;
+        /* number of lines to show */
+        -webkit-box-orient: vertical;
+    }
+
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .carousel-item h1 {
+        font-size: 6.5vw;
+    }
+
+    .bg-explore .explore-title {
+        font-size: 4vw;
+    }
+
+    .max-lines {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        /* number of lines to show */
+        -webkit-box-orient: vertical;
+    }
+
+}
+
+/* Large devices (desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .carousel-item p {
+        font-size: 1.5vw;
+    }
+
+    .max-lines {
+        overflow: visible;
+        display: block;
+    }
+}
